@@ -114,7 +114,7 @@ label= "LOWER"                                                 ;
 label= "RAISE"                                                 ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │         │         │                    │         │         │    Ü    │         │         │
+             │         │         │         │         │  RESET  │                    │  RESET  │         │    Ü    │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │    Ä    │         │    ß    │         │         │         │                    │         │         │         │         │    Ö    │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -124,7 +124,7 @@ label= "RAISE"                                                 ;
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-              &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &kp RA(U) &trans    &trans     
+              &trans    &trans    &trans    &trans    &kp C_RESET               &kp C_RESET    &trans    &kp RA(U) &trans    &trans     
     &kp RA(A) &trans    &kp RA(S) &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &kp RA(O) &trans  
     &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
                                   &mo ADJUST &trans   &trans    &trans     &trans    &trans    &trans    &trans  
